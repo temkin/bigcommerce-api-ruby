@@ -5,7 +5,7 @@
 module Bigcommerce
   class CustomField < Resource
     include Bigcommerce::SubresourceActions.new(
-      uri: 'products/%d/custom_fields/%d'
+      uri: 'catalog/products/%d/custom_fields/%d'
     )
 
     property :id
