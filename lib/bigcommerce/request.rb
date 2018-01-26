@@ -75,7 +75,7 @@ module Bigcommerce
         if json[:data].is_a? Array
           json[:data].map { |obj| new obj }
         else
-          new json
+          new json[:data]
         end
       end
 
