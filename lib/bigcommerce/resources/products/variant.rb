@@ -7,7 +7,6 @@ module Bigcommerce
 
     property :id
     property :sku
-    property :sku_id
     property :product_id
     property :cost_price
     property :price
