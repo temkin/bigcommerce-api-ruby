@@ -14,5 +14,6 @@ module Bigcommerce
     property :display_name
     property :sort_order
     property :is_required
+    property :option_values
   end
 end

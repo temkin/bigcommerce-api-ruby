@@ -12,5 +12,9 @@ module Bigcommerce
     property :sort_order
     property :value
     property :is_default
+
+    def self.create(product_id, option_id, params = {})
+      post "catalog/products/#{product_id}/options/#{option_id}/values", params
+    end
   end
 end
